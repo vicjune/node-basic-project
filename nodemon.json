@@ -9,8 +9,8 @@
     "src"
   ],
   "exec": "(tslint -c tslint.json 'src/**/*.ts' && ts-node --inspect src) || true",
-	"ext": "ts",
-	"events": {
+  "ext": "ts",
+  "events": {
     "restart": "pkill -f ./node_modules/ts-node/dist/_bin.js"
   }
 }
