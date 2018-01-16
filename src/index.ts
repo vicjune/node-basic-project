@@ -1,10 +1,12 @@
-import app from './App'
+require('dotenv').config();
 
-const port = process.env.PORT || 3000
+import app from './App';
+
+const port = process.env.PORT || 3000;
 
 app.listen(port, (err) => {
   if (err) {
-    return console.log(err)
+    return console.log(err);
   }
 
   console.log({
@@ -20,7 +22,7 @@ app.listen(port, (err) => {
       'ffazrfaerf',
       'ergegr'
     ]
-  })
+  });
 
-  return console.log(`server is listening on ${port}`)
-})
+  return console.log(`server is listening on ${port}`);
+});
